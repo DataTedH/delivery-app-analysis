@@ -62,3 +62,8 @@ CREATE TABLE OfferPickup (
                              LocationID INT,
                              PRIMARY KEY (OfferID, LocationID)
 );
+
+ALTER TABLE Shift
+ADD COLUMN StartOdometer INT,
+ADD COLUMN EndOdometer INT,
+ADD COLUMN MaintenanceCost DECIMAL(5,2);
